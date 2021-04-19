@@ -32,7 +32,7 @@ public class MyRecyclerView extends AppCompatActivity {
 
         MyAdapter myAdapter = new MyAdapter(this, s1, s2, images);
         recyclerView.setAdapter(myAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this)); /*qu'est ce qu'un layoutmanager*/
 
 
 
