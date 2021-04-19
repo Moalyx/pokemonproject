@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mEmailInput;
     private EditText mPassWordInput;
     private Button mGoPlayButton;
-    private User mUser;
+
 
 
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mUser = new User();
+
         mEmailInput = findViewById(R.id.activity_main_enter_mail);
         mPassWordInput = findViewById(R.id.activity_main_enter_password);
         mGoPlayButton = findViewById(R.id.activity_main_go_button);
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
                 {
                     mGoPlayButton.setEnabled(true);
-                    Intent mainPokemonList = new Intent(MainActivity.this, MainPokemonList.class);
-                    startActivity(mainPokemonList);
+                    Intent myRecyclerView = new Intent(MainActivity.this, MyRecyclerView.class);
+                    startActivity(myRecyclerView);
                     Toast.makeText(MainActivity.this, "CORRECT", Toast.LENGTH_SHORT).show();
                     toast.setView(view);
                     toast.show();

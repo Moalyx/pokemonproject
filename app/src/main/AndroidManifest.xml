@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ActivityMagneton"></activity>
+        <activity android:name=".MyRecyclerView"></activity>
+        <activity android:name=".ActivityMagneton" />
         <activity android:name=".ActivityLamantine" />
         <activity android:name=".ActivityGalopa" />
         <activity android:name=".ActivityFlagadoss" />

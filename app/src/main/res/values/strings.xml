@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">PROJETPOKEMON</string>
+
+    <string-array name="pokemon_name">
+        <item>CANARTICHO</item>
+        <item>DODRIO</item>
+        <item>FLAGADOSS</item>
+        <item>GALOPA</item>
+        <item>LAMANTINE</item>
+        <item>MAGNETON</item>
+
+
+    </string-array>
+
+    <string-array name="description">
+        <item>"Canarticho comme l'indique son nom, ressemble en tout point à un canard : il a deux pattes palmées jaunes possédant trois doigts chacune, deux ailes et un bec. On peut remarquer cependant qu'il possède un sourcil unique noir et des sortes de doigts  à chaque aile."</item>
+        <item>"Chacune possède également une crête, composée de deux plumes noires, ainsi que d'une bec plus allongé. Le bas du torse de ce Pokémon est couvert de duvet noir, et au dessus de son postérieur trône une queue en éventail rose."</item>
+        <item>"Flagadoss est une version bipède de sa forme de base, Ramoloss. Son bassin plus large et la musculature de ses pattes arrière permettent la position debout. L'équilibre est aidé par la présence du Kokiyas qui lui mord la queue. Son bas-ventre n'est plus rose, mais comporte une série de stries jaune clair."</item>
+        <item>"Galopa est un Pokémon très agile. Il court à une vitesse d'à peu près 240 km/h, chassant tout ce qui bouge en espérant pouvoir le courser. Avec une accélération incroyable, il peut atteindre sa vitesse maximale en seulement dix pas. Au galop, ses sabots touchent à peine le sol."</item>
+        <item>"Lamantine est un pokémon ressemblant à un gros phoque plus qu'un lamantin. Il vit en eau froide et peut nager à 8 nœuds. Le pokédex le décrit capable de marcher sur la terre ferme mais préférant les eaux froides, comme les otaries et les phoques. Il est protégé du froid de l'air ou de l'eau par son épaisse fourrure bleue-blanche et son Isograisse hypodermique. Plus l'eau est froide plus ils sont heureux."</item>
+        <item>"Magnéton émet un puissant champ magnétique qui neutralise les appareils électroniques. Lorsque ces Pokémon débarquent en masse, les villes sonnent l'alarme et préviennent les habitants. ... La fusion de trois Magnéti a donné naissance à ce Pokémon. Il surveille les alentours en libérant de puissantes ondes électriques."</item>
+
+    </string-array>
+
+
 </resources>
