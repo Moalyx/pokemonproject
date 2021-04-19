@@ -10,13 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MyRecyclerView"></activity>
-        <activity android:name=".ActivityMagneton" />
-        <activity android:name=".ActivityLamantine" />
-        <activity android:name=".ActivityGalopa" />
-        <activity android:name=".ActivityFlagadoss" />
-        <activity android:name=".ActivityDodrio" />
-        <activity android:name=".ActivityCanarticho" />
-        <activity android:name=".MainPokemonList" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
