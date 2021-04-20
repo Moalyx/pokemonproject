@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">PROJETPOKEMON</string>
 
-    <string-array name="pokemon_name">
-        <item>CANARTICHO</item>
-        <item>DODRIO</item>
-        <item>FLAGADOSS</item>
-        <item>GALOPA</item>
-        <item>LAMANTINE</item>
-        <item>MAGNETON</item>
+    <string-array name="pokemon_scream">
+        <item>COIN COIN COIN</item>
+        <item>CUI CUI CUI</item>
+        <item>GRRR GRRR GRRR</item>
+        <item>HUUU HUUUU HUUU</item>
+        <item>MOUIK MOUIK MOUIK</item>
+        <item>WOUM WOUM WOUM</item>
 
 
     </string-array>
