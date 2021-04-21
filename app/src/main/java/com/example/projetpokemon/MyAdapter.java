@@ -16,25 +16,13 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    List <String> data1 = new ArrayList<>();
-    List <String> data2 = new ArrayList<>();
-    List <Integer> title = new ArrayList<>();
-    List <Integer> imag= new ArrayList<>() ;
     Context context;
+    List<Pokemon> pokemonList;
 
-    public MyAdapter(Context ct,List <String> s1,List <String> s2,List<Integer> title, List <Integer> images){
-        this.context = ct;       /*a quoi fait reference ce context je ne comprends pas*/
-        this.data1 = s1;
-        this.data2 = s2;
-        this.title= title;
-        this.imag = images;
-
-
-
-
-
+    public MyAdapter(Context context, List<Pokemon> pokemonList) {
+        this.context = context;
+        this.pokemonList = pokemonList;
     }
-
 
     @NonNull
     @Override
@@ -45,16 +33,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) { /*j'aimerai des eclaircissements sur la position*/
-        holder.myText1.setText(data1.get(position));
-        holder.myText2.setText(data2.get(position));
-        holder.imageViewTitle.setImageResource(title.get(position));
-        holder.myImageView.setImageResource(imag.get(position));
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Pokemon pokemon = pokemonList.get(position);
+        holder.myText1.setText(pokemon.getScream());
+        holder.myText2.setText(pokemon.getDescription());
+        holder.imageViewTitle.setImageResource(pokemon.getTitle());
+        holder.myImageView.setImageResource(pokemon.getImage());
     }
 
     @Override
-    public int getItemCount() {
-        return imag.size();
+    public int getItemCount()
+    {
+        return pokemonList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {    /*pourquoi on met une classe dans une autre classe?*/

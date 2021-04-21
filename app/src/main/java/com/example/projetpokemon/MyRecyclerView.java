@@ -14,17 +14,10 @@ import java.util.List;
 public class MyRecyclerView extends AppCompatActivity {
 
 
+
     RecyclerView recyclerView;
 
-    List <String> s1;
-
-    List <String> s2;
-
-    List <Integer> title = new ArrayList<>();
-
-    List <Integer> images = new ArrayList<>();
-
-
+    List<Pokemon> pokemonList = new ArrayList<>();
 
 
     @Override
@@ -33,25 +26,24 @@ public class MyRecyclerView extends AppCompatActivity {
         setContentView(R.layout.activity_my_recycler_view);
 
         recyclerView = findViewById(R.id.recyclerView);
+        String[] screamArray = getResources().getStringArray(R.array.pokemon_scream);
+        String[] descriptionArray = getResources().getStringArray(R.array.description);
 
-        title.add(R.drawable.canarticho);
-        title.add(R.drawable.dodrio);
-        title.add(R.drawable.flagadoss);
-        title.add(R.drawable.galopa);
-        title.add(R.drawable.lamantine);
-        title.add(R.drawable.magneton);
+        Pokemon canarticho = new Pokemon(screamArray[0], descriptionArray[0], R.drawable.canarticho,R.drawable.canarticho_pokedex);
+        Pokemon dodrio = new Pokemon(screamArray[1], descriptionArray[1], R.drawable.dodrio,R.drawable.dodrio_pokedex);
+        Pokemon flagadoss = new Pokemon(screamArray[2], descriptionArray[2], R.drawable.flagadoss,R.drawable.flagadoss_pokedex);
+        Pokemon galopa = new Pokemon(screamArray[3],descriptionArray[3],R.drawable.galopa, R.drawable.galopa_pokedex);
+        Pokemon lamantine = new Pokemon(screamArray[4], descriptionArray[4], R.drawable.lamantine,R.drawable.lamantine_pokedex);
+        Pokemon magneton = new Pokemon(screamArray[5], descriptionArray[5], R.drawable.magneton, R.drawable.magneton_pokedex);
 
-        images.add(R.drawable.canarticho_pokedex);
-        images.add(R.drawable.dodrio_pokedex);
-        images.add(R.drawable.flagadoss_pokedex);
-        images.add(R.drawable.galopa_pokedex);
-        images.add(R.drawable.lamantine_pokedex);
-        images.add(R.drawable.magneton_pokedex);
+        pokemonList.add(canarticho);
+        pokemonList.add(dodrio);
+        pokemonList.add(flagadoss);
+        pokemonList.add(galopa);
+        pokemonList.add(lamantine);
+        pokemonList.add(magneton);
 
-        s1 = Arrays.asList(getResources().getStringArray(R.array.pokemon_scream));
-        s2 = Arrays.asList(getResources().getStringArray(R.array.description));
-
-        MyAdapter myAdapter = new MyAdapter(this,s1,s2, title, images);
+        MyAdapter myAdapter = new MyAdapter(this,pokemonList);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this)); /*qu'est ce qu'un layoutmanager*/
 
