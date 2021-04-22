@@ -12,6 +12,16 @@
 
     </string-array>
 
+    <string-array name="myUrls">
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png</item>
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png</item>
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png</item>
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png</item>
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png</item>
+        <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png</item>
+
+    </string-array>
+
     <string-array name="description">
         <item>"Canarticho comme l'indique son nom, ressemble en tout point à un canard : il a deux pattes palmées jaunes possédant trois doigts chacune, deux ailes et un bec. On peut remarquer cependant qu'il possède un sourcil unique noir et des sortes de doigts  à chaque aile."</item>
         <item>"Chacune possède également une crête, composée de deux plumes noires, ainsi que d'une bec plus allongé. Le bas du torse de ce Pokémon est couvert de duvet noir, et au dessus de son postérieur trône une queue en éventail rose."</item>

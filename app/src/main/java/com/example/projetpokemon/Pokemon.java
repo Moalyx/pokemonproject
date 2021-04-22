@@ -1,19 +1,18 @@
 package com.example.projetpokemon;
 
-import java.util.List;
-
 public class Pokemon {
 
-    private  String scream;
-    private  String description;
-    private  int title;
-    private  int image;
+    private String scream;
+    private String description;
+    private int title;
+    private String imageUrl;
 
-    public Pokemon(String scream, String description, int title, int image) {
+
+    public Pokemon(String scream, String description, int title, String imageUrl) {
         this.scream = scream;
         this.description = description;
         this.title = title;
-        this.image = image;
+        this.imageUrl = imageUrl;
     }
 
     public String getScream() {
@@ -32,7 +31,7 @@ public class Pokemon {
         this.description = description;
     }
 
-    public int getTitle() {
+    public int getTitle(int position) {
         return title;
     }
 
@@ -40,11 +39,11 @@ public class Pokemon {
         this.title = title;
     }
 
-    public int getImage() {
-        return image;
+    public String getImageUrl(int position) {
+        return imageUrl;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
