@@ -56,13 +56,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 .load(pokemon.getImageUrl(position))
                 .centerCrop()
                 .into(holder.myImageView);
-//
+
+        //
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pokemonList.remove(pokemonList.get(position));
                 notifyItemRemoved(position);
             }
+
+
         });
 
         holder.addButton.setOnClickListener(new View.OnClickListener() {
@@ -73,20 +76,34 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             }
         });
 
+//        holder.myImageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Glide.with(context)
+//                        .load(pokemon.getDetailUrl(position))
+//                        .centerCrop()
+//                        .into(holder.myImageView);
+//
+////                Intent intent = new Intent(context, ActivityDetailPokemon.class);
+////                context.startActivity(intent);
+//
+//            }
+//        });
+
         holder.myImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Glide.with(context)
-                        .load(pokemon.getDetailUrl(position))
-                        .centerCrop()
-                        .into(holder.myImageView);
+                Intent intent = new Intent(context, DetailActivity.class);
+                intent.putExtra("image_detail", pokemon.getDetailUrl(position));
+                context.startActivity(intent);
 
-//                Intent intent = new Intent(context, ActivityDetailPokemon.class);
-//                context.startActivity(intent);
 
             }
         });
+
+
     }
 
     @Override

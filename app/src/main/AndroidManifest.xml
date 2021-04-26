@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MyAdapterBis"></activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".MyAdapterBis" />
         <activity android:name=".MyRecyclerView" />
         <activity android:name=".MainActivity">
             <intent-filter>
