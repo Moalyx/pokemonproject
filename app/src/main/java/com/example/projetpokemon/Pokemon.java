@@ -6,13 +6,15 @@ public class Pokemon {
     private String description;
     private int title;
     private String imageUrl;
+    private String detailUrl;
 
 
-    public Pokemon(String scream, String description, int title, String imageUrl) {
+    public Pokemon(String scream, String description, int title, String imageUrl, String detailUrl) {
         this.scream = scream;
         this.description = description;
         this.title = title;
         this.imageUrl = imageUrl;
+        this.detailUrl = detailUrl;
     }
 
     public String getScream() {
@@ -45,5 +47,13 @@ public class Pokemon {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getDetailUrl(int position) {
+        return detailUrl;
+    }
+
+    public void setDetailUrl(String detailUrl) {
+        this.detailUrl = detailUrl;
     }
 }

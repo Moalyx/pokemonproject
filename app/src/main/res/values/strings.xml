@@ -8,8 +8,6 @@
         <item>HUUU HUUUU HUUU</item>
         <item>MOUIK MOUIK MOUIK</item>
         <item>WOUM WOUM WOUM</item>
-
-
     </string-array>
 
     <string-array name="myUrls">
@@ -19,7 +17,15 @@
         <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png</item>
         <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png</item>
         <item>https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png</item>
+    </string-array>
 
+    <string-array name="pokemonUrl">
+        <item>https://static3.cards-capital.com/48939/canarticho.jpg</item>
+        <item>https://fr.shopping.rakuten.com/photo/1194548325.jpg</item>
+        <item>https://i.ebayimg.com/images/g/7A4AAOSwyxNgbC3k/s-l1600.jpg</item>
+        <item>https://fr.shopping.rakuten.com/photo/503807958.jpg</item>
+        <item>https://images-na.ssl-images-amazon.com/images/I/A1PrIyk3-WL._AC_SL1500_.jpg</item>
+        <item>https://cdn.shopify.com/s/files/1/1715/6019/products/Magneton_a7979813-f80a-43f8-9c64-74febf03283c_800x.jpg?v=1590418210</item>
     </string-array>
 
     <string-array name="description">
@@ -29,7 +35,6 @@
         <item>"Galopa est un Pokémon très agile. Il court à une vitesse d'à peu près 240 km/h, chassant tout ce qui bouge en espérant pouvoir le courser. Avec une accélération incroyable, il peut atteindre sa vitesse maximale en seulement dix pas. Au galop, ses sabots touchent à peine le sol."</item>
         <item>"Lamantine est un pokémon ressemblant à un gros phoque plus qu'un lamantin. Il vit en eau froide et peut nager à 8 nœuds. Le pokédex le décrit capable de marcher sur la terre ferme mais préférant les eaux froides, comme les otaries et les phoques. Il est protégé du froid de l'air ou de l'eau par son épaisse fourrure bleue-blanche et son Isograisse hypodermique. Plus l'eau est froide plus ils sont heureux."</item>
         <item>"Magnéton émet un puissant champ magnétique qui neutralise les appareils électroniques. Lorsque ces Pokémon débarquent en masse, les villes sonnent l'alarme et préviennent les habitants. ... La fusion de trois Magnéti a donné naissance à ce Pokémon. Il surveille les alentours en libérant de puissantes ondes électriques."</item>
-
     </string-array>
 
 
