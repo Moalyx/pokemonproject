@@ -5,12 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/eclair"
     tools:context=".DetailActivity">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/pikachuu" />
+
+    <ImageView
+        android:id="@+id/image_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/image_detail"
-        android:src="@drawable/canarticho_pokedex"/>
+        android:layout_marginTop="0dp"
+        android:src="@drawable/canarticho_pokedex" />
 
 </LinearLayout>

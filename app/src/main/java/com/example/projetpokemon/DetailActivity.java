@@ -19,19 +19,21 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
-    private  void  getIncomingIntent(){
+    private void getIncomingIntent() {
 
-        if(getIntent().hasExtra("image_detail")){
+        if (getIntent().hasExtra("image_detail")) {
             String imageDetail = getIntent().getStringExtra("image_detail");
 
             setImage(imageDetail);
         }
     }
 
-    private void setImage (String imageDetail){
+    private void setImage(String imageDetail) {
         ImageView image = findViewById(R.id.image_detail);
-        Glide.with (this)
+        Glide.with(this)
                 .load(imageDetail)
+                //.circleCrop()
+                //.centerCrop()
                 .into(image);
     }
 

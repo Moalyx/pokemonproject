@@ -6,12 +6,14 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Parcelable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -31,8 +33,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyAdapter(Context context, List<Pokemon> pokemonList) {
         this.context = context;
         this.pokemonList = pokemonList;
-
-
     }
 
 
@@ -49,23 +49,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Pokemon pokemon = pokemonList.get(position);
         holder.description.setText(pokemon.getDescription());
+        holder.scream.setText(pokemon.getScream());
         holder.imageViewTitle.setImageResource(pokemon.getTitle(position));
 
 
         Glide.with(context)
                 .load(pokemon.getImageUrl(position))
-                .centerCrop()
+                .circleCrop()
                 .into(holder.myImageView);
 
-        //
+
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pokemonList.remove(pokemonList.get(position));
                 notifyItemRemoved(position);
             }
-
-
         });
 
         holder.addButton.setOnClickListener(new View.OnClickListener() {
@@ -76,34 +75,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             }
         });
 
-//        holder.myImageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Glide.with(context)
-//                        .load(pokemon.getDetailUrl(position))
-//                        .centerCrop()
-//                        .into(holder.myImageView);
-//
-////                Intent intent = new Intent(context, ActivityDetailPokemon.class);
-////                context.startActivity(intent);
-//
-//            }
-//        });
-
         holder.myImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(context, DetailActivity.class);
                 intent.putExtra("image_detail", pokemon.getDetailUrl(position));
                 context.startActivity(intent);
-
-
             }
         });
-
-
     }
 
     @Override
